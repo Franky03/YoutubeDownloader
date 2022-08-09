@@ -1,0 +1,76 @@
+body{
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+
+.div-item{
+    margin: 10px;
+}
+.btn{
+    position: relative;
+    top: 20px;
+    margin: 0 20px;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+}
+
+.label-float input{
+    border: 0;
+    border-bottom: 2px solid #A2B5BB;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+.label-float input:focus{
+    border-bottom: 2px solid #EB1D36;
+}
+
+.label-float input::placeholder{
+    color: transparent;
+}
+
+.label-float label{
+    pointer-events: none;
+    position: absolute;
+    left: 560px;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+
+.label-float input:required:invalid + label{
+    color: red;
+}
+
+.label-float input:focus:required:invalid {
+    border-bottom: 2px solid red;
+}
+
+.label-float input:required:invalid + label:before{
+    content: '*';
+  }
+
+.label-float input:focus + label, .label-float input:not(:placeholder-shown)+ label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #EB1D36;
+}
+
+#footer{
+    margin-top: 20%;
+}
+
+.fa-brands, .fa-solid{
+    margin: 5px;
+    color: #2C3333;
+}
